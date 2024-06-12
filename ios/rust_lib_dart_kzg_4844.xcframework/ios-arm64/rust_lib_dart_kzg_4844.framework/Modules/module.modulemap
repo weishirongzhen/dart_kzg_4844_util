@@ -1,0 +1,6 @@
+framework module rust_lib_dart_kzg_4844 {
+  umbrella header "rust_lib_dart_kzg_4844-umbrella.h"
+
+  export *
+  module * { export * }
+}
