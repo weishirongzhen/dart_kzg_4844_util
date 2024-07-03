@@ -3,7 +3,7 @@
 For EIP-4844, dart impl 
 
 ## source project
-(c-kzg-4844)[https://github.com/ethereum/c-kzg-4844]
+[c-kzg-4844](https://github.com/ethereum/c-kzg-4844)
 
 ```dart
 import 'package:convert/convert.dart';
