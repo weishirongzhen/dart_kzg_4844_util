@@ -1,6 +1,6 @@
 name: dart_kzg_4844_util
 description: "kzg for EIP-4844"
-version: 0.0.1
+version: 1.0.0
 homepage: https://github.com/weishirongzhen/dart_kzg_4844_util
 
 environment:
@@ -14,6 +14,8 @@ dependencies:
   flutter_rust_bridge: 2.0.0-dev.36
   convert: ^3.1.1
   crypto: ^3.0.3
+  cbor: ^6.3.1
+
 
 dev_dependencies:
   flutter_test:

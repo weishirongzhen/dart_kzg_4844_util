@@ -1,0 +1,23 @@
+# Files and directories created by pub
+.packages
+.pub/
+build/
+
+# Remove the following pattern if you wish to check in your lock file
+pubspec.lock
+
+# Files created by dart2js
+*.part.js
+*.js.deps
+*.info.json
+
+# Directory created by dartdoc
+doc/api/
+
+# JetBrains IDEs
+.idea/
+*.ipr
+*.iws
+
+# Dart 2 additions
+.dart_tool/
