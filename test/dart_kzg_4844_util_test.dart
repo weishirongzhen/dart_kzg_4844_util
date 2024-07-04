@@ -1,3 +1,4 @@
+import 'dart:convert';
 import 'dart:typed_data';
 
 import 'package:convert/convert.dart';
@@ -45,4 +46,36 @@ void main() {
 
     print(result.first.toHex());
   });
+
+  test('json list', () {
+    final jsonStr = getBlob20TransferJson(ticker: 'KJUI', transfers: [
+      Blob20TransferItem("toA",133),
+      Blob20TransferItem("toB",123),
+    ]);
+
+    print(jsonStr);
+  });
+}
+
+class Blob20TransferItem {
+  final String to;
+  final int amount;
+
+  Blob20TransferItem(this.to, this.amount);
+
+  Map<String, dynamic> toJson() {
+    return {
+      'to': to,
+      'amount': amount,
+    };
+  }
+}
+// https://docs-blobscriptions.glypher.io/blob20/indexing-rules
+String getBlob20TransferJson({
+  required String ticker,
+  required List<Blob20TransferItem> transfers,
+}) {
+  final ts = json.encode(transfers);
+
+  return '{"protocol":"blob20","token":{"operation":"transfer","ticker":"$ticker","transfers":$ts}}';
 }
