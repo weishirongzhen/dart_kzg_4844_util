@@ -1,6 +1,6 @@
 name: dart_kzg_4844_util
 description: "kzg for EIP-4844"
-version: 1.0.0
+version: 1.0.1
 homepage: https://github.com/weishirongzhen/dart_kzg_4844_util
 
 environment:
